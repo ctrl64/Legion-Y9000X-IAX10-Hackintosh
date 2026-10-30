@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>org.local.LenovoAmpBridge</string>
+	<key>CFBundleName</key>
+	<string>LenovoAmpBridge</string>
+	<key>CFBundleExecutable</key>
+	<string>LenovoAmpBridge</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleVersion</key>
+	<string>0.1.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>OSBundleRequired</key>
+	<string>Local-Root</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>8.0.0</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>2.0.0</string>
+		<key>com.alexandred.VoodooI2C</key>
+		<string>2.9.1</string>
+		<key>com.alexandred.VoodooI2CServices</key>
+		<string>1</string>
+	</dict>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>LenovoAmpBridge</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.local.LenovoAmpBridge</string>
+			<key>IOClass</key>
+			<string>LenovoAmpBridge</string>
+			<key>IOProviderClass</key>
+			<string>VoodooI2CControllerDriver</string>
+			<key>IOMatchCategory</key>
+			<string>LenovoAmpBridge</string>
+			<key>IOProbeScore</key>
+			<integer>100</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>
