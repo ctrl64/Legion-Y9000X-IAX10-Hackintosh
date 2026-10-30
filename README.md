@@ -24,3 +24,6 @@ Lenovo Legion Y9000X IAX10 Hackintosh EFI
 * [realtek wifi driver](https://github.com/FranciumOS-org/Airport_RTW89)
 * [realtek bluetooth driver](https://github.com/thegwchr/RealtekBluetoothFirmware)
 
+
+## ❗❗❗ Notice:
+Use [GenSMBIOS](https://github.com/corpnewt/gensmbios) get Serial、MLB and SmUUID and replace config.plist content
